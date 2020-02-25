@@ -1,9 +1,9 @@
 import angular from "angular";
+import "./bootstrapper";
 
-import welcomeLayout from "./components/welcome-layout";
-
-angular.module("app", []).controller("HelloController", function($scope) {
-  $scope.person = "daton89";
+angular.module("app").controller("HelloController", function($scope) {
+	$scope.person = "andrew";
 });
 
-angular.module("app").component("welcomeLayout", welcomeLayout);
+import testComponent from "./components/test-component";
+angular.module("app").component("testComponent", testComponent);
