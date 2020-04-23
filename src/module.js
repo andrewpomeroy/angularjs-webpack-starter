@@ -1,5 +1,4 @@
 import angular from "angular";
-import "./bootstrapper";
 
 angular.module("app").controller("HelloController", function($scope) {
 	$scope.person = "andrew";
